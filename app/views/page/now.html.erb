@@ -1,0 +1,19 @@
+  <div data-controller="reveal" class="flex flex-row w-full h-full">
+    <%= render 'page/sidebar_button' %>
+    <div class="flex flex-row w-full h-full bg-slate-900">
+      <%= render 'page/sidebar', highlighted: "now" %>
+      <div data-action="click->reveal#hide" class="animate-fade-in-bottom sm:px-60 w-full h-full py-16 px-10 overflow-auto transition-all text-white">
+        <div class="text-lg bold">
+          Now
+        </div>
+        <ul class="flex flex-col gap-y-3">
+          <li>
+            <a target="_blank" href="https://www.imageworks.ai/" >ImageWorks</a>
+          </li>
+          <li>
+            This website!
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>

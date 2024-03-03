@@ -1,0 +1,13 @@
+<div class="max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-lg p-6">
+    <div class="flex justify-between">
+      <h2 class="text-xl font-semibold text-gray-800"><%= name %></h2>
+      <p class="text-gray-500"><%= year %></p>
+    </div>
+    <p class="text-gray-600 mb-2"><%= title %></p>
+    <p class="text-gray-800 mb-2"><%= description %></p>
+    <div class="flex flex-wrap gap-1 mt-2">
+      <% for skill in skills %>
+        <%= render 'page/pill', text: skill %>
+      <% end %>
+    </div>
+</div>

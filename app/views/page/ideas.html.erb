@@ -1,0 +1,37 @@
+  <div data-controller="reveal" class="flex flex-row w-full h-full">
+    <%= render 'page/sidebar_button' %>
+    <div class="flex flex-row w-full h-full bg-slate-900">
+      <%= render 'page/sidebar', highlighted: "ideas" %>
+      <div data-action="click->reveal#hide" class="animate-fade-in-bottom sm:px-60 w-full h-full py-16 px-10 overflow-auto transition-all text-white">
+        <div class="text-lg bold">
+          Ideas
+        </div>
+        <ul class="flex flex-col gap-y-3">
+          <li>
+            At home preventative care devices. An MRI that can be used like a toothbrush.
+          </li>
+          <li>
+            Easier way to stub services. Currently the hardest part of testing is stubbing out dependent services. Would be nice if defining the architecture created the stub.
+          </li>
+          <li>
+            Currently webscraping requires reading html elements of the page. However, generally whats of interest is the data via the api. It would be nice to have a clean way to reverse engineer the api of a website and extract data.
+          </li>
+          <li>
+            Daily logits. A daily game where you guess what word chat gpt expects to fill in the blank.
+          </li>
+          <li>
+            Subsurface google maps
+          </li>
+          <li>
+            Value based care based insurance company
+          </li>
+          <li>
+            Youtube channel recreating the engineering of tv/movies
+          </li>
+          <li>
+            Read the peripheral nervous system for user inputs
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>

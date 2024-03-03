@@ -1,0 +1,9 @@
+  <div data-controller="reveal" class="flex flex-row w-full h-full">
+    <%= render 'page/sidebar_button' %>
+    <div class="flex flex-row w-full h-full">
+      <%= render 'page/sidebar', highlighted: "about" %>
+      <div data-action="click->reveal#hide" class="w-full h-full p-10 overflow-auto transition-all bg-slate-900 text-white">
+          <%= render 'page/about' %>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,81 @@
+<div class="animate-fade-in-bottom flex flex-col gap-y-4 w-full h-full sm:px-60">
+  <div class="flex flex-col-reverse items-center justify-center sm:flex-row gap-x-5 gap-y-3">
+    <div class="flex flex-col gap-y-2">
+      <div class="text-lg bold">
+        Michael Eliot
+      </div>
+      <div>
+        Full stack engineer building AI products
+      </div>
+      <div>
+        @ San Francisco California
+      </div>      
+      <div class="flex flex-row gap-x-6">
+        <a target="_blank" href="https://www.linkedin.com/in/michael-eliot/">
+          <img class="bg-white rounded" width="50" height="50" src="https://img.icons8.com/ios/100/linkedin.png" alt="linkedin"/>
+        </a>
+        <a target="_blank" href="https://github.com/michaeleliot">
+          <img class="bg-white rounded" width="50" height="50" src="https://img.icons8.com/ios/100/github--v1.png" alt="github--v1"/>
+        </a>
+        <a href="resume.pdf" target="_blank">
+          <img class="bg-white rounded" width="50" height="50" src="https://img.icons8.com/ios/100/resume.png" alt="resume"/>
+        </a>
+      </div>
+    </div>
+    <img class="justify-center bg-white rounded" width="150" height="150" src="profile.jpg" alt="Profile photo"/>
+  </div>
+  <div>
+    <div class="text-xl font-semibold">
+      About
+    </div>
+    <div class="mt-2">
+      I'm a full stack engineer that builds business products around machine learning algorithms. I've worked on a wide variety of projects and teams, building out AI products that deliver real value to organizations. I have a deep love of working with others to target pressing business problems.
+    </div>
+  </div>
+  <div>
+    <div class="text-xl font-semibold">
+      Work Experience
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
+      <%= render 'page/work' %>
+    </div>
+  </div>
+  <div>
+    <div class="text-xl font-semibold">
+      Education
+    </div>
+    <div class="mt-2">
+      <div class="flex justify-between">
+        <h2 class="text-xl font-semibold">UC Berkeley</h2>
+        <p class="">2015 - 2019</p>
+      </div>
+      <div>
+        Bachelor's degree in Computer Science
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="text-xl font-semibold">
+      Primary Skills
+    </div>
+    <div class="flex flex-wrap gap-x-3 gap-y-3 mt-2">
+      <%= render 'page/pill', text: "Typescript" %>
+      <%= render 'page/pill', text: "React" %>
+      <%= render 'page/pill', text: "Node.js" %>
+      <%= render 'page/pill', text: "Python" %>
+    </div>
+  </div>
+  <div>
+    <div class="text-xl font-semibold">
+      Projects
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
+      <%= render "page/card", name: "Evmos", title: "", year: "2022", description: "Bridge between ethereum and evmos. Helped build the web platform used to interface with the bridge.", skills: ["React"] %>
+      <%= render "page/card", name: "Waffle House Index", title: "", year: "2021", description: "The waffle house index uses the menu at the waffle house to determine disaster affects. Short web project to learn mapbox that plotted all of the waffle houses as well as their menu", skills: ["React", "Next.js", "Mapbox"] %>
+      <%= render "page/card", name: "Environmental Blockchain", title: "", year: "2018 - 2019", description: "Project to enable carbon credits to be freely exchanged on the blockchain.", skills: ["React"] %>
+      <%= render "page/card", name: "Seismic Simulation", title: "", year: "2017 - 2018", description: "Worked with professor in the geophysics department as well as a PHD student to use android devices to collect, analyze, and visualize seismic activity in urban environments. Used to showcase building movements during seismic activity.", skills: ["Java", "Android Studio"] %>
+      <%= render "page/card", name: "BMUN Ios & Android Apps", title: "", year: "2016 - 2017", description: "Static apps to display basic conference information such as timeline information, map locations, and FAQs.", skills: ["Java", "Swift", "Android Studio", "Xcode"] %>
+      <%= render "page/card", name: "Huxley", title: "", year: "2015 - 2016", description: "Berkeley Model United Nations web service to manage delegates including delegate turning in position papers, chairs submitting grades, and managing any alerts that need to go out to all committees.", skills: ["Django", "Python"] %>
+    </div>
+  </div>
+</div>

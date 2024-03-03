@@ -1,0 +1,18 @@
+  <div data-controller="reveal" class="w-full h-full">
+    <%= render 'page/sidebar_button' %>
+    <div class="flex flex-row w-full h-full">
+      <%= render 'page/sidebar', highlighted: "home" %>
+      <div class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col gap-y-6 items-center justify-center">
+        <div class="opacity-0 text-7xl sm:text-9xl text-white text-center animate-fade animate-fill-forwards">
+          Michael Eliot
+        </div>
+        <div class="opacity-0 text-xl sm:text-3xl text-white text-center animate-fade animate-delay-1000 animate-fill-forwards">
+          Software Engineer
+        </div>
+      </div>
+      <div data-action="click->reveal#hide" class="overflow-hidden w-full h-full overflow-auto transition-all bg-slate-900 text-white">
+          <div id="background-canvas">
+          </div>
+      </div>
+    </div>
+  </div>
