@@ -2,18 +2,16 @@
     <%= render 'page/sidebar_button' %>
     <div class="flex flex-row w-full h-full bg-slate-900">
       <%= render 'page/sidebar', highlighted: "now" %>
-      <div data-action="click->reveal#hide" class="animate-fade-in-bottom sm:px-60 w-full h-full py-16 px-10 overflow-auto transition-all text-white">
+      <div data-action="click->reveal#hide" class="animate-fade-in-bottom sm:px-60 w-full h-full py-16 px-10 overflow-auto transition-all text-white gap-y-3 flex flex-col">
         <div class="text-lg bold">
           Now
         </div>
         <ul class="flex flex-col gap-y-3">
           <li>
-            <a target="_blank" href="https://www.imageworks.ai/" >ImageWorks</a>
-          </li>
-          <li>
-            This website!
+            <a target="_blank" href="https://www.imageworks.ai/" >ImageWorks.AI</a>
           </li>
         </ul>
+        <img class="bg-white rounded p-1" src="imageworks.png" alt="imageworks"/>
       </div>
     </div>
   </div>
