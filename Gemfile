@@ -71,4 +71,3 @@ end
 
 gem 'p5'
 gem "dockerfile-rails", ">= 1.6", :group => :development
-

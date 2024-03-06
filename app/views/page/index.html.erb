@@ -9,6 +9,17 @@
         <div class="opacity-0 text-xl sm:text-3xl text-white text-center animate-fade animate-delay-1000 animate-fill-forwards">
           Software Engineer
         </div>
+        <div class="flex flex-row opacity-0 animate-fade animate-delay-1000 animate-fill-forwards">
+          <%= link_to about_path, class: "outline px-4 mx-4 %s text-slate-300 rounded hover:bg-slate-500 active:bg-slate-500 focus:bg-slate-500 cursor-pointer" do %>
+            <div class="px-4">About</div>
+          <% end %>
+          <%= link_to ideas_path, class: "outline outline-slate-300 px-4 mx-4 %s text-slate-300 rounded hover:bg-slate-500 active:bg-slate-500 focus:bg-slate-500 cursor-pointer" do %>
+            <div class="px-4">Ideas</div>
+          <% end %>
+          <%= link_to now_path, class: "outline outline-slate-300 px-4 mx-4 %s text-slate-300 rounded hover:bg-slate-500 active:bg-slate-500 focus:bg-slate-500 cursor-pointer" do %>
+            <div class="px-4">Now</div>
+          <% end %>
+        </div>
       </div>
       <div data-action="click->reveal#hide" class="overflow-hidden w-full h-full overflow-auto transition-all bg-slate-900 text-white">
           <div id="background-canvas">
